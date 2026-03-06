@@ -1,0 +1,32 @@
+# Spanish Tutor with Ollama - Requirements
+
+## Core (Required)
+requests>=2.31.0
+
+## Voice Features (Optional but Recommended)
+SpeechRecognition>=3.10.0  # For speech-to-text
+pyaudio>=0.2.14            # For microphone access
+pyttsx3>=2.90              # For offline text-to-speech
+
+## Enhanced Voice (Optional)
+edge-tts>=6.1.10           # Better quality voices
+pygame>=2.5.0              # For audio playback
+
+## Installation Commands
+
+### Minimal (Text Only)
+# pip install requests
+
+### With Voice Support
+# pip install requests SpeechRecognition pyaudio pyttsx3
+
+### Full Features
+# pip install requests SpeechRecognition pyaudio pyttsx3 edge-tts pygame
+
+### System Dependencies for Voice
+# Ubuntu/Debian:
+# sudo apt-get install python3-pyaudio portaudio19-dev espeak
+
+### Fix for Ubuntu 24.04 broken repos:
+# Use pip with --user flag:
+# pip install --user -r requirements.txt
